@@ -56,7 +56,7 @@ PluginComponent {
 
   Process {
     id: procPowerSet
-    command: ["asusctl", "profile", "-P", "Balanced"] 
+    command: ["asusctl", "profile", "set", "Balanced"] 
     stderr: SplitParser { onRead: line => ToastService.showError("ASUS Error", line) }
     onExited: code => { 
       if(code === 0) { 
