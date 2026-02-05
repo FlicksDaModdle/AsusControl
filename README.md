@@ -32,7 +32,7 @@ Clone this repository into your DankMaterialShell plugins directory (typically l
 
 ```bash
 cd ~/.config/DankMaterialShell/plugins
-git clone https://github.com/pseudofractal/AsusControl.git
+git clone https://github.com/FlicksDaModdle/AsusControl.git
 ```
 
 Once installed, restart DankMaterialShell using `dms restart`.
