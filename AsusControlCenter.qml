@@ -15,7 +15,7 @@ PluginComponent {
 
   readonly property string colorPerf: "#F38BA8"
   readonly property string colorBal: "#CBA6F7"
-  readonly property string colorQuiet: "#94E2D5"
+  readonly property string colorLowPower: "#94E2D5"
   readonly property string colorGpu: "#89B4FA"
 
   Process {
@@ -148,13 +148,13 @@ PluginComponent {
 
   function getModeColor(modeName) {
     if (modeName === "Performance") return root.colorPerf
-    if (modeName === "Quiet") return root.colorQuiet
+    if (modeName === "LowPower") return root.colorLowPower
     return root.colorBal
   }
 
   function getModeIcon(modeName) {
     if (modeName === "Performance") return "rocket_launch"
-    if (modeName === "Quiet") return "bedtime"
+    if (modeName === "LowPower") return "bedtime"
     return "balance"
   }
 
@@ -201,7 +201,7 @@ PluginComponent {
             width: parent.width
 
             Repeater {
-              model: ["Quiet", "Balanced", "Performance"]
+              model: ["LowPower", "Balanced", "Performance"]
 
               StyledRect {
                 width: (parent.width - (Theme.spacingS * 2)) / 3
