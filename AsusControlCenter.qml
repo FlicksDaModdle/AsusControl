@@ -134,7 +134,7 @@ PluginComponent {
   }
 
   function setPowerProfile(name) {
-    procPowerSet.command = ["asusctl", "profile", "-P", name]
+    procPowerSet.command = ["asusctl", "profile", "set", name]
     procPowerSet.running = true
     root.activeProfile = name
   }
