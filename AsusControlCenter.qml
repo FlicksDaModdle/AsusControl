@@ -24,7 +24,7 @@ PluginComponent {
     stdout: SplitParser {
       onRead: line => {
         var match = line.trim().match(/(\w+)$/)
-        if (match && ["Quiet", "Balanced", "Performance"].includes(match[1])) {
+        if (match && ["LowPower", "Balanced", "Performance"].includes(match[1])) {
           root.activeProfile = match[1]
         }
       }
